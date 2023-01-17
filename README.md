@@ -12,15 +12,15 @@ phong.cpp /phong.h
 transmissive.cpp / transmissive.h
 
 Shader:
-directShader.cpp / directShader.h (only direct illumination)
-intersectionshader.cpp / intersectionshader.h (basic shader that displays intersections, no light sources or shading)
-normalShader.cpp / normalShader.h (displays normal values as colors)
-depthShader.cpp / depthShader.cpp (like the intersectionshader but considers the object’s distance to the camera)
-globalShader.cpp / globalShader.h (renders both direct and indirect illumination)
+- directShader.cpp / directShader.h (only direct illumination)
+- intersectionshader.cpp / intersectionshader.h (basic shader that displays intersections, no light sources or shading)
+- normalShader.cpp / normalShader.h (displays normal values as colors)
+- depthShader.cpp / depthShader.cpp (like the intersectionshader but considers the object’s distance to the camera)
+- globalShader.cpp / globalShader.h (renders both direct and indirect illumination)
 
 ## Files edited by me:
-ray.cpp / ray.h (isInsideObj bool added)
-main.cpp (created new Materials, created new Objects, created new Lights, raytrace function (ray generation), created new Shader, call raytrace with the correct arguments in the main function)
+- ray.cpp / ray.h (isInsideObj bool added)
+- main.cpp (created new Materials, created new Objects, created new Lights, raytrace function (ray generation), created new Shader, call raytrace with the correct arguments in the main function)
 
 
 ## How to use
@@ -45,4 +45,5 @@ Depth Shader (flat shader, considers distance to camera):
 ![depth](https://user-images.githubusercontent.com/50264516/212912878-62be8f32-6ca6-4e21-aee3-6e29c724de34.jpg)
 
 Intersection Shader (flat shading):
+
 ![flat](https://user-images.githubusercontent.com/50264516/212912888-73b36992-190e-4ac6-b6d2-0f89de437fa7.jpg)
